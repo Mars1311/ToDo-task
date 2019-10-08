@@ -54,7 +54,7 @@ function createHTML(title, name, description, priority, deadline, status, id){
 		</div>
 		<div class="option" id="${id}">
 			<div class="state" id="state-button" onclick = "changeState()" >${status}</div>
-			<div class="edit" id="open-edit" onclick="openEditPopUp >Edit</div>
+			<div class="edit" id="open-edit" onclick="openEditPopUp" >Edit</div>
 			<div class="remove" id="remove-button" onclick = "removeTask()" >Remove</div>
 		</div>
 </div>`)
