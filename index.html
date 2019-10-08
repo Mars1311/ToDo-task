@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+	<div class="info-block" id="info-block">
+		<h1>Just do list  </h1>
+		<section class="current-date" id="current-date"></section>
+	</div>
+	<div class="add-button" id="add-button">
+		<img src="plus.png" alt="" class="">
+	</div>
+</div>
+<div class="settings">
+	<div class="sort">Sort</div>
+	<div class="search">Search</div>
+</div>
+<div class="pop-up">
+
+	<div class="head">
+			<input type="text" class="title-form" id="title-form" placeholder="Title">
+			<div class="close-pop-up" id="close-pop-up">
+				<img src="close.png" alt="image to close pop-up window">
+			</div>
+	</div>
+
+	<form class="main">
+		<input  type="text" class="name-form" id="name-form" placeholder="Name" required minlength="2" maxlength="20" pattern="^[A-Za-z]+$">
+		<input type="text" id="description-form" placeholder="Description"> <br>
+		<select name="priority" id="priority-form">
+			<option value="low">Low</option>
+			<option value="middle">Middle</option>
+			<option value="high">High</option>
+		</select><br>
+		<input required type="date"  name="deadline" id="deadline-form">
+	</form>
+
+	<div class="footer">
+		<a href="#" class="confirm-button" id="confirm-button"> Add</a>
+		<a href="#" class="cancel-button" id="cancel-button">Cancel</a>
+	</div>
+</div>
+<div class="pop-up edit" id='edit'>
+	<div class="head">
+		<input type="text" class="title-form" id="title-edit" placeholder="Title">
+		<div class="close-pop-up" id="close-edit">
+			<img src="close.png" alt="image to close pop-up window">
+		</div>
+</div>
+
+<form class="main">
+	<input  type="text" class="name-form" id="name-edit" placeholder="Name" required minlength="2" maxlength="20" pattern="^[A-Za-z]+$">
+	<input type="text" id="description-edit" placeholder="Description"> <br>
+	<select name="priority" id="priority-edit">
+		<option value="low">Low</option>
+		<option value="middle">Middle</option>
+		<option value="high">High</option>
+	</select><br>
+	<input required type="date"  name="deadline" id="deadline-edit">
+</form>
+
+<div class="footer">
+	<a href="#" class="confirm-button" id="edit-button"> Edit</a>
+	<a href="#" class="cancel-button" id="edit-button">Cancel</a>
+</div>
+</div>
+<div class="tasks-container" id="tasks-container"> 
+	<div class="task-element">
+			<div class="title">
+				<p>Title</p>
+			</div>
+			<div class="name">
+				<p>Name</p>
+			</div>
+			<div class="description">
+				<p>Description Description Description Description Description</p>
+			</div>
+			<div class="priority">
+				<p>Low</p></div>
+			<div class="deadline">
+				<p>date</p>
+			</div>
+			<div class="option">
+				<div class="state">Done</div>
+				<div class="edit">Edit</div>
+				<div class="remove">Remove</div>
+			</div>
+	</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html> 

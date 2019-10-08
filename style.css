@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(80deg, #8c3aab, #6746ef);
+  position: relative;
+}
+
+.header .info-block {
+  height: 100%;
+  color: white;
+  position: relative;
+  left: 80px;
+}
+
+.header .info-block h1 {
+  position: relative;
+  top: 10px;
+}
+
+.header .info-block .current-date {
+  position: relative;
+  top: 20px;
+}
+
+.header .info-block:hover {
+  color: violet;
+}
+
+.header .add-button img {
+  position: relative;
+  top: 30px;
+  right: 80px;
+  height: 50px;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.header .add-button img:hover {
+  cursor: pointer;
+}
+
+.header .add-button img:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.pop-up {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin: auto;
+  margin-top: 30px;
+  -webkit-box-shadow: 0 0 6px rgba(82, 81, 81, 0.171);
+          box-shadow: 0 0 6px rgba(82, 81, 81, 0.171);
+}
+
+.pop-up .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pop-up .head input.title-form {
+  width: 292px;
+  font-size: 1.2em;
+}
+
+.pop-up .head input:invalid {
+  border: 2px dashed red;
+}
+
+.pop-up .head ::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.pop-up .head :-moz-placeholder {
+  text-align: center;
+}
+
+.pop-up .head ::-moz-placeholder {
+  text-align: center;
+}
+
+.pop-up .head :-ms-input-placeholder {
+  text-align: center;
+}
+
+.pop-up .head .close-pop-up {
+  position: relative;
+  right: 28px;
+  top: 6px;
+}
+
+.pop-up .head .close-pop-up img {
+  width: 20px;
+  height: 20px;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  cursor: pointer;
+}
+
+.pop-up .head .close-pop-up img:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.pop-up .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 0 32px;
+}
+
+.pop-up .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.pop-up .footer .confirm-button, .pop-up .footer .cancel-button {
+  margin: 16px 0px;
+  font-size: 14px;
+  padding: 4px 23px;
+  text-align: center;
+  background-color: #4caf50;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+.pop-up .footer .confirm-button:active, .pop-up .footer .cancel-button:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.pop-up .footer .cancel-button {
+  background-color: #f44336;
+}
+
+.pop-up input, .pop-up select {
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  padding: 4px;
+  margin-top: 8px;
+  color: black;
+}
+
+.tasks-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.tasks-container .task-element {
+  width: 300px;
+  margin: 16px;
+}
+
+.tasks-container .task-element .title {
+  background-color: #b961da;
+  height: 60px;
+}
+
+.tasks-container .task-element .title p {
+  color: #fff;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 1.2em;
+  border-bottom: none;
+}
+
+.tasks-container .task-element .name {
+  margin-top: 16px;
+}
+
+.tasks-container .task-element p {
+  margin: 0px 32px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dad9d9;
+  color: grey;
+}
+
+.tasks-container .task-element .description p {
+  word-break: break-word;
+}
+
+.tasks-container .task-element .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tasks-container .task-element .option .state, .tasks-container .task-element .option .edit, .tasks-container .task-element .option .remove {
+  margin: 16px 8px;
+  font-size: 14px;
+  padding: 4px 23px;
+  text-align: center;
+  background-color: #4caf50;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+.tasks-container .task-element .option .state:active, .tasks-container .task-element .option .edit:active, .tasks-container .task-element .option .remove:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.tasks-container .task-element .option .edit {
+  background-color: #0263c5;
+}
+
+.tasks-container .task-element .option .remove {
+  background-color: #f44336;
+}
+/*# sourceMappingURL=style.css.map */
